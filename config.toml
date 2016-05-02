@@ -1,0 +1,26 @@
+baseurl = "http://iambismark.net/"
+languageCode = "en-us"
+title = "I Am Bismark"
+pluralizelisttitles =  false
+preserveTaxonomyNames = true
+
+[permalinks]
+post = "/:section/:slug"
+
+[taxonomies]
+category = "" 
+tag = ""
+archive = "archive"
+
+
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/archive/"
+[[menu.main]]
+name = "About"
+identifier = "about"
+url = "/about/"
+[[menu.main]]
+name = "RSS"
+identifier = "rss"

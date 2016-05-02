@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    background-color: #778899;
+    margin: 0;
+    color: #444;
+}
+
+#container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 45em;
+}
+
+header, footer, main {
+    padding: 5px 20px;
+    background-color: #eee;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+a {
+    color: #333;
+}
+
+main {
+    flex: 1;
+}
+
+footer li {
+    list-style: none;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+

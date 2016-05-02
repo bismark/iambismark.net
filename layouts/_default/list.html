@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+<main>
+<h1>{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+        {{ partial "article.html" . }}
+        <hr>
+    {{ end }}
+</main>
+
+{{ partial "footer.html" . }}

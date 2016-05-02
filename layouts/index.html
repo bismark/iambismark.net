@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+<main>
+    {{ range (first 5 (where .Data.Pages "Section" "post")) }}
+        {{ partial "article.html" . }}
+        <hr>
+    {{ end }}
+</main>
+
+{{ partial "footer.html" . }}
