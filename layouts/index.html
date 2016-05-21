@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <main>
     {{ range (first 5 (where .Data.Pages "Section" "post")) }}
-        {{ partial "article.html" . }}
+        {{ partial "post.html" . }}
         <hr>
     {{ end }}
 </main>

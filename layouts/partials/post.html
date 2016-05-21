@@ -1,0 +1,5 @@
+{{ if eq .Type "photo" }}
+{{ partial "photo.html" . }}
+{{ else }}
+{{ partial "article.html" . }}
+{{ end }}

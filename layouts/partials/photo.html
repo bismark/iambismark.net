@@ -1,0 +1,16 @@
+<article>
+   {{ if .Title }}
+   <a href={{ .Permalink }}>
+       <h2 id="title">{{ .Title }}</h2>
+   </a>
+   {{ end }}
+
+   {{ if .Params.imagelink }}<a href="{{ .Params.imagelink }}">{{ end }}
+       <img src="{{ .Params.image }}" {{ if .Params.imagealt }}alt="{{ .Params.imagealt | markdownify }}"{{ end}}>
+   {{ if .Params.imagelink }}</a>{{ end }}
+
+   {{ .Content }}
+
+   <a href={{ .Permalink }}>{{ .Date.Format "2006/01/02" }}</a>
+</article>
+
