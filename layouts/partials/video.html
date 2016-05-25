@@ -1,0 +1,14 @@
+<article>
+   {{ if .Title }}
+   <a href={{ .Permalink }}>
+       <h2 id="title">{{ .Title }}</h2>
+   </a>
+   {{ end }}
+
+   <video src="{{ .RelPermalink }}/1.mp4" controls></video>
+
+   {{ .Content }}
+
+   <a href={{ .Permalink }}>{{ .Date.Format "2006/01/02" }}</a>
+</article>
+
