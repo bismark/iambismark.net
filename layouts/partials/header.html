@@ -9,7 +9,7 @@
             <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
             <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
         {{ end }}
-        <title>{{ if .Title }}{{ .Title }}{{ else}}{{ if .IsPage }}{{ title .Type }}{{ end}}{{ end }}{{ if eq $isHomePage false }} | {{ .Site.Title }}{{ end }}</title>
+        <title>{{ if .Title }}{{ .Title | markdownify }}{{ else}}{{ if .IsPage }}{{ title .Type }}{{ end}}{{ end }}{{ if eq $isHomePage false }} | {{ .Site.Title }}{{ end }}</title>
     </head>
     <body>
         <div id="container">

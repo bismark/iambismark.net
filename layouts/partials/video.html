@@ -1,7 +1,7 @@
 <article>
    {{ if .Title }}
    <a href={{ .Permalink }}>
-       <h2 id="title">{{ .Title }}</h2>
+       <h2 id="title">{{ .Title | markdownify }}</h2>
    </a>
    {{ end }}
 
