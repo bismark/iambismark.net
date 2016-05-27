@@ -1,11 +1,11 @@
-baseurl = "http://iambismark.net/"
+baseurl = "https://iambismark.net/"
 languageCode = "en-us"
 title = "I Am Bismark"
 pluralizelisttitles =  false
 preserveTaxonomyNames = true
 
 [permalinks]
-post = "/:section/:slug"
+post = "/:section/:slug/"
 
 [taxonomies]
 category = "" 
