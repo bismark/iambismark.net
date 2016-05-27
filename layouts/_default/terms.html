@@ -3,9 +3,8 @@
 <main>
 <h1>{{ .Title }}</h1>
     <ul>
-    {{ $data := .Data }}
-    {{ range $key, $value := .Data.Terms }}
-        <li><a href="{{ $key | urlize }}/">{{ $key }}</a> {{ len $value }}</li>
+    {{ range $key, $value := .Data.Terms.Alphabetical.Reverse }}
+        <li><a href="{{ $value.Name | urlize }}/">{{ $value.Name }}</a> ({{ $value.Count }})</li>
     {{ end }}
    </ul>
 </main>
