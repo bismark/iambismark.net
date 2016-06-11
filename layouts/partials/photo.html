@@ -1,11 +1,20 @@
 <article>
    {{ if .Title }}
-   <a href={{ .Permalink }}>
-       <h2 id="title">{{ .Title | markdownify }}</h2>
-   </a>
+   <h2 id="title">{{ .Title | markdownify }}</h2>
    {{ end }}
 
-   <img src="{{ .RelPermalink }}1.{{ .Params.imagetype }}"{{ if .Params.imagealt }} alt="{{ .Params.imagealt | markdownify }}"{{ end}}>
+   {{ $format := .Params.imagetype }}
+   {{ $relpath := .RelPermalink }}
+   {{ $sizes := .Params.imagesizes | default (slice "1200" "720" "360") }}
+   {{ $biggestsize := index $sizes 0 }}
+
+   <img src="{{ .RelPermalink }}1-{{ $biggestsize}}.{{ .Params.imagetype }}"
+        srcset="{{ range $size := $sizes }}
+        {{ $relpath }}1-{{ $size }}.{{ $format }} {{ $size }}w,
+        {{ end }}"
+        sizes="(min-width: {{ $biggestsize }}px) {{ $biggestsize}}px, 100vw"
+   {{ if .Params.imagealt }} alt="{{ .Params.imagealt | markdownify }}"{{ end}}>
+
 
    {{ .Content }}
 

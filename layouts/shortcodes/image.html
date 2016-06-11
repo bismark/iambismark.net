@@ -1,0 +1,26 @@
+{{- if .IsNamedParams }}
+{{ $relpath :=  delimit (slice .Page.RelPermalink (.Get "filenum")) "" }}
+{{ $format := .Get "format" | default "jpg" }}
+{{ $sizes := (apply (split (.Get "sizes") ",") "trim" "." " ") | default (slice "1200" "720" "360") }}
+{{ $biggestsize := index $sizes 0 }}
+<p>
+<img src="{{ $relpath }}-{{ $biggestsize }}.{{ $format }}" 
+     srcset="{{ range $size := $sizes }}
+         {{ $relpath }}-{{ $size }}.{{ $format }} {{ $size }}w,
+         {{ end }}"
+     sizes="(min-width: {{ $biggestsize }}px) {{ $biggestsize }}px, 100vw"
+     alt="{{ .Inner }}">
+</p>
+{{ else }}
+{{ $relpath :=  delimit (slice .Page.RelPermalink (.Get 0)) "" -}}
+{{ $sizes := (slice "1200" "720" "360") -}}
+{{ $biggestsize := index $sizes 0 -}}
+{{ $format := "jpg" -}}
+<img src="{{ $relpath }}-{{ $biggestsize }}.{{ $format }}" 
+     srcset="{{ range $size := $sizes }}
+         {{ $relpath }}-{{ $size }}.{{ $format }} {{ $size }}w,
+         {{ end -}}"
+     sizes="(min-width: {{ $biggestsize }}px) {{ $biggestsize }}px, 100vw"
+     alt="{{ .Inner }}">
+{{ end -}}
+

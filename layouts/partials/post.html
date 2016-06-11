@@ -2,6 +2,8 @@
 {{ partial "photo.html" . }}
 {{ else if eq .Type "video" }}
 {{ partial "video.html" . }}
+{{ else if eq .Type "link" }}
+{{ partial "link.html" . }}
 {{ else }}
 {{ partial "article.html" . }}
 {{ end }}

@@ -1,8 +1,6 @@
 <article>
    {{ if .Title }}
-   <a href={{ .Permalink }}>
-       <h2 id="title">{{ .Title | markdownify }}</h2>
-   </a>
+   <h2 id="title">{{ .Title | markdownify }}</h2>
    {{ end }}
 
    <video src="{{ .RelPermalink }}1.mp4" controls></video>
