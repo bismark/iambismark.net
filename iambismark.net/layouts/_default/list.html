@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+<main>
+<h1>{{ .Title }}</h1>
+DERP
+    {{ range .Data.Pages }}
+        {{ partial "post.html" . }}
+        <hr>
+    {{ end }}
+</main>
+
+{{ partial "footer.html" . }}
