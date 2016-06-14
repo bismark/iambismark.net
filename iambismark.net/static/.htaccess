@@ -1,2 +1,9 @@
 ErrorDocument 404 /404.html
 
+RedirectMatch 404 /post/$
+
+RewriteCond %{HTTP:Accept-Encoding} gzip 
+RewriteCond %{REQUEST_FILENAME}.gz -f 
+RewriteCond %{PATH_INFO} ^$
+RewriteRule ^(.*)$ $1.gz [L] 
+

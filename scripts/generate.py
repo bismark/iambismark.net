@@ -2,20 +2,25 @@
 import os
 import subprocess
 
+current_path = os.getcwd()
+base_path = os.path.join(current_path, "iambismark.net")
+os.chdir(base_path)
 subprocess.check_call(["hugo"])
 
-base_path = os.path.join(os.getcwd(), "public")
-site_path = os.path.join(base_path, "iambismark.net")
+output_path = os.path.join(os.getcwd(), "public")
 
-aliases = ["blog.iambismark.net", "www.iambismark.net", "iambismark.nfshost.com"]
+for root, dirs, files in os.walk(output_path):
+    for filename in files:
+        if filename == "index.xml" and root != output_path:
+            os.remove(os.path.join(root, "index.xml"))
+            continue
 
-for alias in aliases:
-    alias_path = os.path.join(site_path, alias)
-    new_path = os.path.join(base_path, alias)
-    os.rename(alias_path, new_path)
+        path = os.path.join(root, filename)
+        if filename.split(".", 1)[1] in ["html", "xml", "css"]:
+            subprocess.check_call(["gzip", "--no-name", "--rsyncable", "--force", "--best", "--keep", path])
 
-for root, dirs, files in os.walk(site_path):
-    if root == site_path:
-        continue
-    if "index.xml" in files:
-        os.remove(os.path.join(root, "index.xml"))
+
+os.remove(os.path.join(output_path, "post", "index.html.gz"))
+os.remove(os.path.join(output_path, "post", "index.html"))
+
+os.chdir(current_path)

@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "I Am Bismark"
 pluralizelisttitles =  false
 preserveTaxonomyNames = true
-publishdir = "public/iambismark.net"
 
 [permalinks]
 post = "/:section/:slug/"
