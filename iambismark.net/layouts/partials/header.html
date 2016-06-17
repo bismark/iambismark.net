@@ -4,14 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width = device-width">
         <link rel="stylesheet" href="/css/style.css">
-        {{ $isHomePage := eq .Title .Site.Title }}
-        {{ if $isHomePage }}
+        {{ if .IsHome }}
             <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
             <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
         {{ else if eq .IsPage false }}
             <meta name="robots" content="noindex,follow"/>
         {{ end }}
-        <title>{{ if .Title }}{{ .Title | markdownify }}{{ else}}{{ if .IsPage }}{{ title .Type }}{{ end}}{{ end }}{{ if eq $isHomePage false }} | {{ .Site.Title }}{{ end }}</title>
+        <title>{{ if .Title }}{{ .Title | markdownify }}{{ else}}{{ if .IsPage }}{{ title .Type }}{{ end}}{{ end }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
     </head>
     <body>
         <div id="container">

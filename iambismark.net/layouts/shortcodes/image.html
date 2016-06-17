@@ -1,26 +1,25 @@
-{{- if .IsNamedParams }}
-{{ $relpath :=  delimit (slice .Page.RelPermalink (.Get "filenum")) "" }}
-{{ $format := .Get "format" | default "jpg" }}
-{{ $sizes := (apply (split (.Get "sizes") ",") "trim" "." " ") | default (slice "1200" "720" "360") }}
-{{ $biggestsize := index $sizes 0 }}
+{{- $.Scratch.Set "sizes"  (slice "1200" "720" "360") -}}
+{{- if .IsNamedParams -}}
+    {{- $.Scratch.Set "relpath" (delimit (slice .Page.RelPermalink (.Get "filenum")) "") -}}
+    {{- with .Get "sizes" -}}
+        {{- $.Scratch.Set "sizes" (apply (split . ",") "trim" "." " ") -}}
+    {{- end -}}
+    {{- $.Scratch.Set "format" (.Get "format" | default "jpg") -}}
+{{- else -}}
+    {{- $.Scratch.Set "relpath" (delimit (slice .Page.RelPermalink (.Get 0)) "") -}}
+    {{- $.Scratch.Set "format"  "jpg" -}}
+{{- end -}}
+{{- $relpath := $.Scratch.Get "relpath" -}}
+{{- $sizes := $.Scratch.Get "sizes" -}}
+{{- $format := $.Scratch.Get "format" -}}
+{{- $biggestsize := index $sizes 0 -}}
+{{- $last := sub (len $sizes) 1 -}}
 <p>
 <img src="{{ $relpath }}-{{ $biggestsize }}.{{ $format }}" 
-     srcset="{{ range $size := $sizes }}
-         {{ $relpath }}-{{ $size }}.{{ $format }} {{ $size }}w,
-         {{ end }}"
+     srcset="{{ range $index, $size := $sizes }}
+     {{ $relpath }}-{{ $size }}.{{ $format }} {{ $size }}w{{ if ne $last $index }},{{end}}
+     {{ end -}}"
      sizes="(min-width: {{ $biggestsize }}px) {{ $biggestsize }}px, 100vw"
      alt="{{ .Inner }}">
 </p>
-{{ else }}
-{{ $relpath :=  delimit (slice .Page.RelPermalink (.Get 0)) "" -}}
-{{ $sizes := (slice "1200" "720" "360") -}}
-{{ $biggestsize := index $sizes 0 -}}
-{{ $format := "jpg" -}}
-<img src="{{ $relpath }}-{{ $biggestsize }}.{{ $format }}" 
-     srcset="{{ range $size := $sizes }}
-         {{ $relpath }}-{{ $size }}.{{ $format }} {{ $size }}w,
-         {{ end -}}"
-     sizes="(min-width: {{ $biggestsize }}px) {{ $biggestsize }}px, 100vw"
-     alt="{{ .Inner }}">
-{{ end -}}
 
