@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "I Am Bismark"
 pluralizelisttitles =  false
 preserveTaxonomyNames = true
+metaDataFormat = "yaml"
 
 [permalinks]
 post = "/:section/:slug/"
