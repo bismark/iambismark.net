@@ -1,0 +1,10 @@
+image: publysher/hugo
+
+pages:
+  script:
+  - hugo -s iambismark.net/ --config iambismark.net/config.toml
+  artifacts:
+    paths:
+    - iambismark.net/public
+  only:
+  - master
