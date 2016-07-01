@@ -54,7 +54,7 @@ def new_post(kind, title, photo):
         metadata['title'] = ''
 
     if kind != None:
-        metadata['kind'] = kind
+        metadata['type'] = kind
 
     if title:
         metadata['title'] = title.encode('utf-8')
