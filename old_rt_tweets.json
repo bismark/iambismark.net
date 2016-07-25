@@ -1,0 +1,128 @@
+{
+    "1376567140": {
+        "entities": {
+            "hashtags": [],
+            "media": [],
+            "urls": [],
+            "user_mentions": [
+                {
+                    "id": 18191105,
+                    "id_str": "18191105",
+                    "indices": [
+                        3,
+                        16
+                    ],
+                    "name": "Brooke Eddington",
+                    "screen_name": "brooklyn2020"
+                }
+            ]
+        },
+        "retweeted_tweet_id": "1376500717",
+        "text": "RT @brooklyn2020 \"Man, I wish my mom used Twitter.\" http://is.gd/orKT :)",
+        "timestamp": "2009-03-23T17:08:05+00:00"
+    },
+    "1434291634": {
+        "entities": {
+            "hashtags": [],
+            "media": [],
+            "urls": [],
+            "user_mentions": [
+                {
+                    "id": 18713,
+                    "id_str": "18713",
+                    "indices": [
+                        3,
+                        8
+                    ],
+                    "name": "Alex Payne",
+                    "screen_name": "al3x"
+                }
+            ]
+        },
+        "retweeted_tweet_id": "1434280348",
+        "text": "RT @al3x You know how you can read the entire \"funny pages\" without so much as cracking a smile? That's April Fool's Day on the Internet.",
+        "timestamp": "2009-04-01T21:40:41+00:00"
+    },
+    "1452380164": {
+        "entities": {
+            "hashtags": [
+                {
+                    "indices": [
+                        72,
+                        80
+                    ],
+                    "text": "ldsconf"
+                }
+            ],
+            "media": [],
+            "urls": [],
+            "user_mentions": [
+                {
+                    "id": 342724830,
+                    "id_str": "342724830",
+                    "indices": [
+                        3,
+                        17
+                    ],
+                    "name": "Somethinggirl",
+                    "screen_name": "somethinggirl"
+                }
+            ]
+        },
+        "retweeted_tweet_id": "1452340974",
+        "text": "RT @somethinggirl Testimony is to feel, conversion is to do and become. #ldsconf",
+        "timestamp": "2009-04-04T17:14:10+00:00"
+    },
+    "1457845088": {
+        "entities": {
+            "hashtags": [
+                {
+                    "indices": [
+                        106,
+                        114
+                    ],
+                    "text": "ldsconf"
+                }
+            ],
+            "media": [],
+            "urls": [],
+            "user_mentions": [
+                {
+                    "id": 196897399,
+                    "id_str": "196897399",
+                    "indices": [
+                        3,
+                        14
+                    ],
+                    "name": "Natalie ",
+                    "screen_name": "mrsnatalie"
+                }
+            ]
+        },
+        "retweeted_tweet_id": "1457829265",
+        "text": "RT @mrsnatalie \"because jesus walked such a long solitary path...we do not need to do so\" - Elder Holland #ldsconf",
+        "timestamp": "2009-04-05T17:28:20+00:00"
+    },
+    "1464048879": {
+        "entities": {
+            "hashtags": [],
+            "media": [],
+            "urls": [],
+            "user_mentions": [
+                {
+                    "id": 14828249,
+                    "id_str": "14828249",
+                    "indices": [
+                        3,
+                        14
+                    ],
+                    "name": "Ben Crowder",
+                    "screen_name": "bencrowder"
+                }
+            ]
+        },
+        "retweeted_tweet_id": "1464006746",
+        "text": "RT @bencrowder BYU paper caption under picture of Council of Twelve: \"Quorum of the Twelve Apostates.\" Whoops. Somebody's getting fired. ;)",
+        "timestamp": "2009-04-06T17:18:35+00:00"
+    }
+}
