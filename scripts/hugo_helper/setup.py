@@ -1,16 +1,18 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='hugo_helper',
     version='0.1',
-    py_modules=['hugo_helper'],
+    packages=find_packages(),
     install_requires=[
         'Click',
         'PyYAML',
         'Pillow',
+        'jpegtran-cffi==0.6a1',
     ],
     entry_points='''
         [console_scripts]
-        hugo_helper=hugo_helper:cli
+        hugo_helper=hugo_helper.hugo_helper:cli
     ''',
 )
+

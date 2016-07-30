@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import webbrowser
 import os
 import shutil
 import click
@@ -7,16 +8,12 @@ from datetime import datetime
 import calendar
 import yaml
 from subprocess import call
-from PIL import Image
-from jpegtran import JPEGImage
-import tempfile
+
+import utils
 
 SITE_PATH = os.path.join(os.getcwd(), 'iambismark.net')
 POST_PATH = os.path.join(SITE_PATH, 'content', 'post')
-ORIGINAL_IMAGES_PATH = os.path.join(SITE_PATH, 'original_images')
-STATIC_MEDIA_PATH = os.path.join(SITE_PATH, 'static', 'post')
 KINDS = ['link', 'quote', 'video', 'answer', 'photo', 'audio']
-WIDTHS = [1200, 720, 360]
 
 @click.group()
 def cli():
@@ -43,8 +40,8 @@ def new_post(kind, title, photo):
 
     if kind == 'photo':
         if photo:
-            process_photo(metadata['slug'], photo)
-            metadata['imagetype'] = 'jpg'
+            ext = utils.process_photo(metadata['slug'], photo)[0]
+            metadata['imagetype'] = ext
         else:
             metadata['imagetype'] = ''
 
@@ -113,69 +110,12 @@ def edit_post(slug):
     file_path = os.path.join(path, "{}.md".format(slug))
     call(['vim', file_path])
 
-def process_photo(slug, photo):
-    if not os.path.isfile(photo):
-        raise click.ClickException("Photo file not found")
-
-    try:
-        with Image.open(photo) as im:
-            image_format = im.format
-            image_size = im.size
-    except IOError:
-        raise click.ClickException("Cannot process photo")
-
-    if image_format != 'JPEG':
-        raise click.ClickExcpetion("Unsupported image type")
+@cli.command()
+@click.argument('slug')
+def open_post(slug):
+    url = 'localhost:1313/post/{}'.format(slug)
+    webbrowser.open(url)
 
 
-    original_file_dir = os.path.join(ORIGINAL_IMAGES_PATH, slug)
-    if not os.path.isdir(original_file_dir):
-        os.mkdir(original_file_dir)
-    original_file_path = os.path.join(original_file_dir, '1.jpg')
-    shutil.copyfile(photo, original_file_path)
 
-    image = JPEGImage(photo)
-
-    with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as f:
-        tempfile_name = f.name
-
-    orientation = image.exif_orientation
-    if orientation and orientation != 1:
-        corrected = image.exif_autotransform()
-        corrected.save(tempfile_name)
-    else:
-        image.save(tempfile_name)
-
-    media_dir = os.path.join(STATIC_MEDIA_PATH, slug)
-    if not os.path.isdir(media_dir):
-        os.mkdir(media_dir)
-
-    for width in WIDTHS:
-        if image_size[0] >= width:
-
-            new_path = os.path.join(media_dir, "1-{}.jpg".format(width))
-            shutil.copyfile(tempfile_name, new_path)
-            call(['mogrify',
-                '-filter', 'Triangle',
-                '-define', 'filter:support=2',
-                '-thumbnail', str(width),
-                '-unsharp', '0.25x0.08+8.3+0.045',
-                '-dither', 'None',
-                '-posterize', '136',
-                '-quality', '82',
-                '-define', 'jpeg:fancy-upsampling=off',
-                '-define', 'png:compression-filter=5',
-                '-define', 'png:compression-level=9',
-                '-define', 'png:compression-strategy=1',
-                '-define', 'png:exclude-chunk=all',
-                '-interlace', 'none',
-                '-colorspace', 'sRGB',
-                new_path])
-            call(['jpeg-recompress',
-            '-m', 'smallfry',
-            '-s',
-            '-Q',
-            new_path,
-            new_path])
-    os.remove(tempfile_name)
 
