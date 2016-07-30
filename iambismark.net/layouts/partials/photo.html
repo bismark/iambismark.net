@@ -6,16 +6,15 @@
    {{- $format := .Params.imagetype -}}
    {{- $relpath := .RelPermalink -}}
    {{- $sizes := .Params.imagesizes | default (slice "1200" "720" "360") -}}
-   {{- $biggestsize := index $sizes 0 -}}
+   {{- $biggestsize := index (sort $sizes "value" "desc") 0 -}}
    {{- $last := sub (len $sizes) 1 -}}
 
-   <img src="{{ .RelPermalink }}1-{{ $biggestsize}}.{{ .Params.imagetype }}"
+   <p><img src="{{ .RelPermalink }}1-{{ $biggestsize}}.{{ $format }}"
         srcset="{{ range $index, $size := $sizes }}
         {{ $relpath }}1-{{ $size }}.{{ $format }} {{ $size }}w{{if ne $last $index}},{{end}}
         {{ end }}"
         sizes="(min-width: {{ $biggestsize }}px) {{ $biggestsize}}px, 100vw"
-   {{ if .Params.imagealt }} alt="{{ .Params.imagealt | markdownify }}"{{ end}}>
-
+    {{ if .Params.imagealt }} alt="{{ .Params.imagealt | markdownify }}"{{ end}}></p>
 
    {{ .Content }}
 
