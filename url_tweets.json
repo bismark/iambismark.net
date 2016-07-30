@@ -1,0 +1,670 @@
+{
+    "88358796434489344": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "code.google.com/p/chromium/iss\u2026",
+                    "expanded_url": "http://code.google.com/p/chromium/issues/detail?id=68298",
+                    "indices": [
+                        24,
+                        43
+                    ],
+                    "url": "http://t.co/bx9u5LR"
+                }
+            ]
+        },
+        "title": "HTTP Error 416 Requested Range caused by Chrome",
+        "text": "Really hating this bug:\nhttp://t.co/bx9u5LR",
+        "timestamp": "2011-07-05T21:29:13+00:00"
+    },
+    "92988973084983296": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "google.com/search?q=minec\u2026",
+                    "expanded_url": "http://www.google.com/search?q=minecraft+hunger+games",
+                    "indices": [
+                        92,
+                        111
+                    ],
+                    "url": "http://t.co/BXmsERz"
+                }
+            ]
+        },
+        "title": "Minecraft + Hunger Games",
+        "text": "I knew that the second it popped in my mind that I could not be the first to have the idea: http://t.co/BXmsERz",
+        "timestamp": "2011-07-18T16:07:53+00:00"
+    },
+    "98034599703216129": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "thelastrocket.com",
+                    "expanded_url": "http://thelastrocket.com/",
+                    "indices": [
+                        21,
+                        40
+                    ],
+                    "url": "http://t.co/qhQENuo"
+                }
+            ]
+        },
+        "title": "The Last Rocket",
+        "text": "This looks amazing.\n\nhttp://t.co/qhQENuo",
+        "timestamp": "2011-08-01T14:17:24+00:00"
+    },
+    "136871137039761408": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "techcrunch.com/2011/11/16/sta\u2026",
+                    "expanded_url": "http://techcrunch.com/2011/11/16/startup-rap-angel-funding-undrip/",
+                    "indices": [
+                        118,
+                        138
+                    ],
+                    "url": "http://t.co/0EeOfaXU"
+                }
+            ]
+        },
+        "title": "Sign Of The Times: Startup Raps For Angel Funding",
+        "text": "Undrip is on TechCrunch. I've been moonlighting with them for a few months. (i really hope our servers stay up :D)... http://t.co/0EeOfaXU",
+        "timestamp": "2011-11-16T18:19:56+00:00"
+    },
+    "141339407054675968": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "gamemusicbundle.com",
+                    "expanded_url": "https://web.archive.org/web/20111127231338/http://www.gamemusicbundle.com/",
+                    "indices": [
+                        8,
+                        28
+                    ],
+                    "url": "http://t.co/QNPjcUr4"
+                }
+            ]
+        },
+        "title": "Indie Game Music Bundle",
+        "text": "Bought: http://t.co/QNPjcUr4",
+        "timestamp": "2011-11-29T02:15:15+00:00"
+    },
+    "147468070372392960": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "andrewsullivan.thedailybeast.com/2011/12/ron-pa\u2026",
+                    "expanded_url": "http://dish.andrewsullivan.com/2011/12/15/ron-paul-for-the-gop-nomination/",
+                    "indices": [
+                        65,
+                        85
+                    ],
+                    "url": "http://t.co/7S3kChTt"
+                }
+            ]
+        },
+        "title": "Ron Paul For The GOP Nomination",
+        "text": "w/ SOPA and NDAA today, this is becoming more interesting to me: http://t.co/7S3kChTt",
+        "timestamp": "2011-12-16T00:08:22+00:00"
+    },
+    "168075841186697217": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "gamemusicbundle.com",
+                    "expanded_url": "https://web.archive.org/web/20120210023642/http://www.gamemusicbundle.com/",
+                    "indices": [
+                        19,
+                        39
+                    ],
+                    "url": "http://t.co/QNPjcUr4"
+                }
+            ]
+        },
+        "title": "Indie Game Music Bundle 2",
+        "text": "Just grabbed this: http://t.co/QNPjcUr4 great for programming.",
+        "timestamp": "2012-02-10T20:56:17+00:00"
+    },
+    "169074953847713792": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "5by5.tv/incomparable/70",
+                    "expanded_url": "http://5by5.tv/incomparable/70",
+                    "indices": [
+                        108,
+                        128
+                    ],
+                    "url": "http://t.co/knjUlFob"
+                }
+            ]
+        },
+        "title": "The Incomparable #70: At the Time, They Were Just Average Height",
+        "text": "\"Someday, somebody else besides me will call me by my stage name.\" Today = TMBG thanks to The Incomparable. http://t.co/knjUlFob",
+        "timestamp": "2012-02-13T15:06:24+00:00"
+    },
+    "174872916259905537": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "bycommonconsent.com/2012/02/29/fro\u2026",
+                    "expanded_url": "http://bycommonconsent.com/2012/02/29/from-armand-mauss/",
+                    "indices": [
+                        92,
+                        112
+                    ],
+                    "url": "http://t.co/MwE0k3Ij"
+                }
+            ]
+        },
+        "tags": ["lds"],
+        "title": "From Armand Mauss",
+        "text": "Respone to Professor Bott's rather horrible statements in yesterday's WaPo by Armand Mauss: http://t.co/MwE0k3Ij",
+        "timestamp": "2012-02-29T15:05:26+00:00"
+    },
+    "174963008278237186": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "mormonnewsroom.org/article/racial\u2026",
+                    "expanded_url": "http://www.mormonnewsroom.org/article/racial-remarks-in-washington-post-article",
+                    "indices": [
+                        53,
+                        73
+                    ],
+                    "url": "http://t.co/XzuJ3i2n"
+                }
+            ]
+        },
+        "tags": ["lds"],
+        "title": "Church Statement Regarding 'Washington Post' Article on Race and the Church",
+        "text": "Official response to Professor Bott's opinions. http://t.co/XzuJ3i2n",
+        "timestamp": "2012-02-29T21:03:26+00:00"
+    },
+    "177976634903764993": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "theopenphotoproject.org",
+                    "expanded_url": "https://web.archive.org/web/20120313100824/http://theopenphotoproject.org/",
+                    "indices": [
+                        32,
+                        52
+                    ],
+                    "url": "http://t.co/We7z9GeX"
+                }
+            ]
+        },
+        "title": "The OpenPhoto Project",
+        "text": "Attended an SFPHP meeting about http://t.co/We7z9GeX. Very exciting project with a philosophy I wholeheartedly agree with.",
+        "timestamp": "2012-03-09T04:38:31+00:00"
+    },
+    "188112858813448192": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "lonesurvivor.co.uk",
+                    "expanded_url": "http://lonesurvivor.co.uk/",
+                    "indices": [
+                        11,
+                        31
+                    ],
+                    "url": "http://t.co/K6Nq5cZy"
+                }
+            ]
+        },
+        "title": "Lone Survivor",
+        "text": "It's good: http://t.co/K6Nq5cZy",
+        "timestamp": "2012-04-06T03:56:15+00:00"
+    },
+    "207998960911126529": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "gamemusicbundle.com",
+                    "expanded_url": "https://web.archive.org/web/20120614095524/http://www.gamemusicbundle.com/",
+                    "indices": [
+                        40,
+                        60
+                    ],
+                    "url": "http://t.co/QNPeFkqa"
+                }
+            ]
+        },
+        "title": "Indie Game Music Bundle 3",
+        "text": "Coding music: Indie Game Music Bundle 3 http://t.co/QNPeFkqa",
+        "timestamp": "2012-05-31T00:56:31+00:00"
+    },
+    "213650572807634945": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "kotaku.com/5918311/modern\u2026",
+                    "expanded_url": "http://kotaku.com/5918311/modern-video-game-heroes-as-traditional-japanese-paintings",
+                    "indices": [
+                        119,
+                        139
+                    ],
+                    "url": "http://t.co/8O4ODQd5"
+                }
+            ]
+        },
+        "title": "Modern Video Game Heroes as Traditional Japanese Paintings",
+        "text": "Nintendo characters in Japanese ukiyo-e style. Love it. I knew the artist, Jed, back when I was a missionary in Japan. http://t.co/8O4ODQd5",
+        "timestamp": "2012-06-15T15:14:00+00:00"
+    },
+    "233637136421761024": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "App.net",
+                    "expanded_url": "http://App.net",
+                    "indices": [
+                        63,
+                        83
+                    ],
+                    "url": "http://t.co/1vc1c7ur"
+                }
+            ]
+        },
+        "title": "App.net",
+        "text": "Even though I disagree with it on principle, I decided to back http://t.co/1vc1c7ur just in hopes that it will reign in Twitter.",
+        "timestamp": "2012-08-09T18:53:28+00:00"
+    },
+    "235841317534564352": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "imax.com/movies/m/india\u2026",
+                    "expanded_url": "https://web.archive.org/web/20120817221229/http://www.imax.com/movies/m/indiana-jones-and-the-raiders-of-the-lost-ark-the-imax-experience/",
+                    "indices": [
+                        19,
+                        39
+                    ],
+                    "url": "http://t.co/TED0XkKT"
+                }
+            ]
+        },
+        "title": "Indiana Jones and The Raiders of the Lost Ark: The IMAX Experience",
+        "text": "Tickets purchased: http://t.co/TED0XkKT",
+        "timestamp": "2012-08-15T20:52:06+00:00"
+    },
+    "237622580033495040": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "kickstarter.com/projects/14991\u2026",
+                    "expanded_url": "http://www.kickstarter.com/projects/1499165518/ukiyo-e-heroes/",
+                    "indices": [
+                        5,
+                        25
+                    ],
+                    "url": "http://t.co/bDiyC9yk"
+                }
+            ]
+        },
+        "title": "Ukiyo-e Heroes",
+        "text": "Yes: http://t.co/bDiyC9yk",
+        "timestamp": "2012-08-20T18:50:12+00:00"
+    },
+    "294124703432466432": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "thenextweb.com/shareables/201\u2026",
+                    "expanded_url": "http://thenextweb.com/shareables/2013/01/23/ceos-vcs-and-tech-celebrities-create-a-viral-video-to-help-victims-of-hurricane-sandy/",
+                    "indices": [
+                        103,
+                        123
+                    ],
+                    "url": "http://t.co/nMo3M2kT"
+                }
+            ]
+        },
+        "title": "25 CEOs, VCs and tech celebrities create a viral video to help victims of Hurricane Sandy",
+        "text": "TheNextWeb: 25 CEOs, VCs and tech celebrities create a viral video to help victims of Hurricane Sandy:\nhttp://t.co/nMo3M2kT",
+        "timestamp": "2013-01-23T16:49:28+00:00"
+    },
+    "294137124482076673": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "allthingsd.com/20130123/viral\u2026",
+                    "expanded_url": "http://allthingsd.com/20130123/viral-video-lucky-ones-mashup-for-hurricane-sandy/",
+                    "indices": [
+                        0,
+                        20
+                    ],
+                    "url": "http://t.co/qpQfaEqI"
+                }
+            ]
+        },
+        "title": "Viral Video: “Lucky Ones” Tech Mashup for Hurricane Sandy",
+        "text": "http://t.co/qpQfaEqI",
+        "timestamp": "2013-01-23T17:38:49+00:00"
+    },
+    "341419773369929728": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "twitter.com/redweddingtears",
+                    "expanded_url": "https://twitter.com/redweddingtears",
+                    "indices": [
+                        4,
+                        27
+                    ],
+                    "url": "https://t.co/6pF4Grz9nY"
+                }
+            ]
+        },
+        "title": "TheRedWedding: Collective grief, rage and hilarity from GoT fans",
+        "text": "Heh https://t.co/6pF4Grz9nY (game of thrones spoilers, NSFW language, funny)",
+        "timestamp": "2013-06-03T05:03:11+00:00"
+    },
+    "349985442881470464": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "motherjones.com/kevin-drum/201\u2026",
+                    "expanded_url": "http://www.motherjones.com/kevin-drum/2013/06/supreme-court-prop-8-ruling-problem",
+                    "indices": [
+                        114,
+                        136
+                    ],
+                    "url": "http://t.co/hT0Ek10nnH"
+                }
+            ]
+        },
+        "title": "The Big Problem With the Supreme Court's Prop. 8 Decision",
+        "text": "Indeed: \"[N]either the flavor of justice nor of democratic governance, regardless of whether I like the outcome.\" http://t.co/hT0Ek10nnH",
+        "timestamp": "2013-06-26T20:20:06+00:00"
+    },
+    "354324956995264513": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "tomdale.net/2013/07/san-fr\u2026",
+                    "expanded_url": "http://tomdale.net/2013/07/san-francisco-i-love-you-but-youre-bringing-me-down/",
+                    "indices": [
+                        0,
+                        22
+                    ],
+                    "url": "http://t.co/yrYMxzw56n"
+                }
+            ]
+        },
+        "title": "San Francisco, I Love You But You’re Bringing Me Down",
+        "text": "http://t.co/yrYMxzw56n",
+        "timestamp": "2013-07-08T19:43:47+00:00"
+    },
+    "361934048689537025": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "ff6.ocremix.org",
+                    "expanded_url": "http://ff6.ocremix.org/",
+                    "indices": [
+                        42,
+                        64
+                    ],
+                    "url": "http://t.co/QdoJWkEICe"
+                }
+            ]
+        },
+        "title": "Final Fantasy VI:  Balance and Ruin",
+        "text": "Today's coding session brought to you by: http://t.co/QdoJWkEICe",
+        "timestamp": "2013-07-29T19:39:36+00:00"
+    },
+    "390519697491247104": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "thensavideo.com",
+                    "expanded_url": "http://www.thensavideo.com/",
+                    "indices": [
+                        0,
+                        22
+                    ],
+                    "url": "http://t.co/snYnZ4Yppx"
+                }
+            ]
+        },
+        "title": "The NSA Video",
+        "text": "http://t.co/snYnZ4Yppx",
+        "timestamp": "2013-10-16T16:48:46+00:00"
+    },
+    "393134107535753216": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "kck.st/1bBoxDf",
+                    "expanded_url": "http://kck.st/1bBoxDf",
+                    "indices": [
+                        98,
+                        120
+                    ],
+                    "url": "http://t.co/LhvxPCgkHx"
+                }
+            ]
+        },
+        "title": "Big Giant Circles - \"The Glory Days\"",
+        "text": "Gave myself an early birthday present: \"The Glory Days\" (Impostor Nostalgia 2) by BigGiantCircles http://t.co/LhvxPCgkHx",
+        "timestamp": "2013-10-23T21:57:29+00:00"
+    },
+    "393863652849102848": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "github.com/bismark/UIWebV\u2026",
+                    "expanded_url": "https://github.com/bismark/UIWebViewYouSoCrazy",
+                    "indices": [
+                        63,
+                        86
+                    ],
+                    "url": "https://t.co/EPPD10FU3h"
+                }
+            ]
+        },
+        "title": "UIWebViewYouSoCrazy",
+        "text": "Any UIWebView gurus out there that can give me some tips here? https://t.co/EPPD10FU3h",
+        "timestamp": "2013-10-25T22:16:27+00:00"
+    },
+    "394971335413080065": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "w3.org/Provider/Style\u2026",
+                    "expanded_url": "http://www.w3.org/Provider/Style/URI.html",
+                    "indices": [
+                        25,
+                        47
+                    ],
+                    "url": "http://t.co/w3kvFfvTRc"
+                }
+            ]
+        },
+        "title": "Cool URIs don't change",
+        "text": "Dear Apple Tech Writers, http://t.co/w3kvFfvTRc",
+        "timestamp": "2013-10-28T23:37:59+00:00"
+    },
+    "404316639056764928": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "marco.org/2013/11/23/dir\u2026",
+                    "expanded_url": "http://www.marco.org/2013/11/23/dirty-salesforce-hackathon",
+                    "indices": [
+                        0,
+                        22
+                    ],
+                    "url": "http://t.co/H27wS2RhTs"
+                }
+            ]
+        },
+        "title": "The Dirty Secret Behind the Salesforce $1M Hackathon",
+        "text": "http://t.co/H27wS2RhTs",
+        "timestamp": "2013-11-23T18:32:53+00:00"
+    },
+    "405400317119823872": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "blogs.kqed.org/newsfix/2013/1\u2026",
+                    "expanded_url": "http://blogs.kqed.org/newsfix/2013/11/25/salesforce-hack-scandal/",
+                    "indices": [
+                        0,
+                        22
+                    ],
+                    "url": "http://t.co/D0xcQh2EPW"
+                }
+            ]
+        },
+        "title": "Salesforce Hackathon Fallout: Now Contest Has Two Winners",
+        "text": "http://t.co/D0xcQh2EPW",
+        "timestamp": "2013-11-26T18:19:02+00:00"
+    },
+    "413353246661431296": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "programmer.97things.oreilly.com/wiki/index.php\u2026",
+                    "expanded_url": "http://programmer.97things.oreilly.com/wiki/index.php/The_Boy_Scout_Rule",
+                    "indices": [
+                        0,
+                        22
+                    ],
+                    "url": "http://t.co/UFVelVNOVH"
+                }
+            ]
+        },
+        "title": "The Boy Scout Rule",
+        "text": "http://t.co/UFVelVNOVH",
+        "timestamp": "2013-12-18T17:01:08+00:00"
+    },
+    "413491258724601856": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "al3x.net/2013/12/18/bit\u2026",
+                    "expanded_url": "https://al3x.net/2013/12/18/bitcoin.html",
+                    "indices": [
+                        117,
+                        140
+                    ],
+                    "url": "https://t.co/2p6eP9tWFP"
+                }
+            ]
+        },
+        "title": "Bitcoin, Magical Thinking, and Political Ideology",
+        "text": "\"There\u2019s a big, wide, increasingly poor world out there, and it doesn\u2019t need 99% of what Silicon Valley is selling.\" https://t.co/2p6eP9tWFP",
+        "timestamp": "2013-12-19T02:09:33+00:00"
+    },
+    "414214229118296064": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "gist.github.com/bismark/8064335",
+                    "expanded_url": "https://gist.github.com/bismark/8064335",
+                    "indices": [
+                        8,
+                        31
+                    ],
+                    "url": "https://t.co/0WfdSKMkXk"
+                }
+            ]
+        },
+        "title": "Core Data Crashing Code",
+        "text": "context https://t.co/0WfdSKMkXk",
+        "timestamp": "2013-12-21T02:02:22+00:00"
+    },
+    "451337126756761600": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "blog.spatch.co/post/813899513\u2026",
+                    "expanded_url": "http://blog.spatch.co/post/81389951361/techstars-week-1-roundup",
+                    "indices": [
+                        0,
+                        22
+                    ],
+                    "url": "http://t.co/BA723UOWcV"
+                }
+            ]
+        },
+        "title": "Techstars: Week 1 Roundup",
+        "text": "http://t.co/BA723UOWcV",
+        "timestamp": "2014-04-02T12:35:31+00:00"
+    },
+    "459247580636262400": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "sonic.net",
+                    "expanded_url": "http://sonic.net",
+                    "indices": [
+                        102,
+                        124
+                    ],
+                    "url": "http://t.co/Q0EzVle8Bt"
+                }
+            ]
+        },
+        "title": "Sonic.net",
+        "text": "At this point choosing a slower but non-monopolistic ISP is a form of civil disobedience. I recommend http://t.co/Q0EzVle8Bt in the Bay Area",
+        "timestamp": "2014-04-24T08:28:50+00:00"
+    },
+    "477095236125356033": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "itunes.apple.com/us/app/vvvvvv/\u2026",
+                    "expanded_url": "https://itunes.apple.com/us/app/vvvvvv/id880645949?mt=8",
+                    "indices": [
+                        2,
+                        25
+                    ],
+                    "url": "https://t.co/pYkBHxAkdg"
+                }
+            ]
+        },
+        "title": "VVVVVV for iOS",
+        "text": "\ud83d\udc96 https://t.co/pYkBHxAkdg \ud83d\udc96",
+        "timestamp": "2014-06-12T14:29:02+00:00"
+    },
+    "489039267403137024": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "github.com/objc-zen/objc-\u2026",
+                    "expanded_url": "https://github.com/objc-zen/objc-zen-book#exploit-code-block",
+                    "indices": [
+                        4,
+                        27
+                    ],
+                    "url": "https://t.co/bQMwCVTuHq"
+                }
+            ]
+        },
+        "title": "Obj-C: Exploit Code Block",
+        "text": "TIL https://t.co/bQMwCVTuHq",
+        "timestamp": "2014-07-15T13:30:21+00:00"
+    },
+    "646617014421856257": {
+        "entities": {
+            "urls": [
+                {
+                    "display_url": "idlewords.com/talks/what_hap\u2026",
+                    "expanded_url": "http://idlewords.com/talks/what_happens_next_will_amaze_you.htm",
+                    "indices": [
+                        0,
+                        22
+                    ],
+                    "url": "http://t.co/VeHHoUv5ss"
+                }
+            ]
+        },
+        "title": "What Happens Next Will Amaze You",
+        "text": "http://t.co/VeHHoUv5ss",
+        "timestamp": "2015-09-23T09:28:04+00:00"
+    }
+}
