@@ -3,7 +3,7 @@
    <h2>{{ .Title | markdownify }}</h2>
    {{ end }}
 
-   {{- $format := .Params.imagetype -}}
+   {{- $format := .Params.imagetype | default "jpg" -}}
    {{- $relpath := .RelPermalink -}}
    {{- $sizes := .Params.imagesizes | default (slice "1200" "720" "360") -}}
    {{- $biggestsize := index (sort $sizes "value" "desc") 0 -}}
