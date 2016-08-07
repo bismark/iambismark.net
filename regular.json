@@ -1,0 +1,420 @@
+[
+    {
+        "created_at": "2014-05-06T15:59:19Z",
+        "id": "29888840",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "tap tap tap"
+    },
+    {
+        "created_at": "2013-07-12T20:51:28Z",
+        "id": "7620620",
+        "num_replies": 1,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Pacific Rim: Saw it is Spanish so I can't make a judgement on the dialogue, but it needed more robots fighting monsters. Too much sitting around and chatting."
+    },
+    {
+        "created_at": "2013-06-10T20:08:10Z",
+        "id": "6617877",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Things missing: Better inter-app communication, better app store interactions around paid upgrades/subscriptions, swapping out of default apps (though the new multitasking APIs may cover some of this)."
+    },
+    {
+        "created_at": "2013-05-19T20:39:53Z",
+        "id": "5837885",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "New goal: no more Hacker News until my Instapaper queue is empty."
+    },
+    {
+        "created_at": "2013-05-17T18:43:33Z",
+        "id": "5776484",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "There is a goldfish cracker in my shoe."
+    },
+    {
+        "created_at": "2013-05-17T17:46:10Z",
+        "id": "5774698",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Is it just me or is the iPad\u2019s Music.app just horribly buggy? ITunes Match constantly fails and repeated crashes using Shared libraries. </whine>"
+    },
+    {
+        "created_at": "2013-05-09T01:44:05Z",
+        "id": "5475285",
+        "num_replies": 1,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Finally tried out Patter. It\u2019s pretty good! Great job [James](https://alpha.app.net/boxenjim)."
+    },
+    {
+        "created_at": "2013-03-07T07:45:37Z",
+        "id": "3596879",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "I\u2019ve filled up my schedule with potential talks for pycon next feel\u2026 Can\u2019t wait to learn how much I suck at programming."
+    },
+    {
+        "created_at": "2013-03-02T19:22:33Z",
+        "id": "3420805",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "went to a cosmetology school for a haircut and the girl cut her hand. it\u2019s ok, blood blends in with red hair."
+    },
+    {
+        "created_at": "2013-03-01T02:40:47Z",
+        "id": "3351049",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "I wonder why Netflix doesn't show an icon in my DVD queue next to each item available on streaming. It could be a great way to up-sell me if most movies are available... But perhaps they know just how few really are available so it would just look bad."
+    },
+    {
+        "created_at": "2013-03-01T02:38:13Z",
+        "id": "3350966",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Netflix DVD service time has gotten much slower in the last 6 months (2 days down to 4-5 days). If only they had even a fraction of the things I wanted to watch available on streaming..."
+    },
+    {
+        "created_at": "2013-02-26T16:53:14Z",
+        "id": "3212740",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 1,
+        "text": "welcome Adam and Amy Jo to app.net!"
+    },
+    {
+        "created_at": "2013-02-20T14:30:05Z",
+        "id": "3061160",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Nevertheless, I think Alpha has not shown itself to be a killer app for ADN. I hope we will see one soon."
+    },
+    {
+        "created_at": "2013-02-20T14:22:23Z",
+        "id": "3061016",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "This takes the value away from having a monopoly on people\u2019s personal data (see Facebook) and instead forces apps to compete on quality features. Ex: there could be N interoperable Instagram-like utilities that interface with compatible identity lockers."
+    },
+    {
+        "created_at": "2013-02-20T14:18:01Z",
+        "id": "3060917",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "By identity locker I mean a service (could be self hosted, could be a pay service, etc) which is the canonical store of your online identity. Applications are then built as utilities on top of that identity once you give them access."
+    },
+    {
+        "created_at": "2013-02-20T14:15:03Z",
+        "id": "3060864",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Lots of discussion about ADN\u2019s viability both online and offline, which is healthy. I see ADN as a new evolutionary step in portable online identity lockers, a market that I hope will take hold."
+    },
+    {
+        "created_at": "2013-02-18T22:28:59Z",
+        "id": "3029417",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "For example, I like browsing with my keyboard using a plugin like Vimium. But then these \"browser apps\" capture my keyboard and break my shortcuts. Having a separate application container for running Javascript apps would be much nicer I think."
+    },
+    {
+        "created_at": "2013-02-18T22:26:20Z",
+        "id": "3029393",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "So when did we all decide \"browser\" just means a sandboxed application container that runs code cached from a remote source? I really wonder if jamming the two together is really the best solution..."
+    },
+    {
+        "created_at": "2013-01-23T15:19:22Z",
+        "id": "2586547",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "big day."
+    },
+    {
+        "created_at": "2013-01-21T22:34:59Z",
+        "id": "2558535",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "itertools better watch out, my wife may get a little jealous of how much I love them. \ud83d\udc97"
+    },
+    {
+        "created_at": "2013-01-20T20:32:00Z",
+        "id": "2541261",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Girl apparently drops stuff while getting off the bus, I grab it and try to give it back, she rather rudely tells me it is not hers, bus leaves without me. FML."
+    },
+    {
+        "created_at": "2013-01-20T20:23:07Z",
+        "id": "2541143",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Burned again by trying to be a nice person. Thanks world."
+    },
+    {
+        "created_at": "2013-01-19T00:17:06Z",
+        "id": "2520406",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "DELETE ALL THE CODES!"
+    },
+    {
+        "created_at": "2013-01-18T17:55:15Z",
+        "id": "2515662",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "SF feels like a tropical paradise. I almost could have gone without the hoodie today."
+    },
+    {
+        "created_at": "2013-01-18T07:45:24Z",
+        "id": "2510161",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "my fly has been down with extraordinary frequency as of late. this is not a trend I am fond of."
+    },
+    {
+        "created_at": "2013-01-17T04:27:22Z",
+        "id": "2494439",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Very cold couple of days in UT."
+    },
+    {
+        "created_at": "2013-01-11T18:48:10Z",
+        "id": "2417671",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Not all that impressed with iTunes Match so far..."
+    },
+    {
+        "created_at": "2013-01-08T09:07:06Z",
+        "id": "2366093",
+        "num_replies": 1,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Finally catching up with 2 year old episodes of The Incomparable now that we have made it to the 11th Doctor."
+    },
+    {
+        "created_at": "2012-12-14T11:07:34Z",
+        "id": "2018385",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "liked it!"
+    },
+    {
+        "created_at": "2012-12-14T02:17:16Z",
+        "id": "2013735",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "the hobbit."
+    },
+    {
+        "created_at": "2012-11-21T19:53:38Z",
+        "id": "1656354",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "blah I am only writing client side software from now on."
+    },
+    {
+        "created_at": "2012-11-13T19:03:57Z",
+        "id": "1522600",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "noooo... I don't have enough hard drive space for another Game Music Bundle..."
+    },
+    {
+        "created_at": "2012-11-10T03:33:45Z",
+        "id": "1475410",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Little Star pizza and now Skyfall IMAX. Good birthday."
+    },
+    {
+        "created_at": "2012-11-09T17:49:40Z",
+        "id": "1468187",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Birthdays today: Carl Sagan, Firefox, and me!"
+    },
+    {
+        "created_at": "2012-10-29T03:51:08Z",
+        "id": "1262676",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Aaaand time to get ear plugs so I can sleep tonight."
+    },
+    {
+        "created_at": "2012-10-29T03:48:43Z",
+        "id": "1262641",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "I VOTED!"
+    },
+    {
+        "created_at": "2012-10-27T23:17:29Z",
+        "id": "1245233",
+        "num_replies": 1,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Maybe I am just a curmudgeon but I hate dressing up for Halloween. Too much effort just to waste on single use clothing."
+    },
+    {
+        "created_at": "2012-10-26T16:00:59Z",
+        "id": "1223495",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Let me just say, I\u2019m very glad to finally be done with the Ninth Doctor. Fantastic!"
+    },
+    {
+        "created_at": "2012-10-17T23:50:26Z",
+        "id": "1054464",
+        "num_replies": 1,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Taken 2 in a nutshell:\n\nSetting: Istanbul\nLiam Neeson: \u201cOn the east side is Europe and on the west is Asia.\u201d\nDaughter: \u201cWow dad, how do you know all of this stuff?\u201d"
+    },
+    {
+        "created_at": "2012-10-17T16:27:47Z",
+        "id": "1045021",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "dreaming of fall. "
+    },
+    {
+        "created_at": "2012-10-15T15:04:33Z",
+        "id": "996504",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "beautiful weather in SF."
+    },
+    {
+        "created_at": "2012-10-13T03:01:22Z",
+        "id": "947804",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Not sure how you can call yourself a pie place while not having pumpkin pie during the middle of October."
+    },
+    {
+        "created_at": "2012-10-13T00:53:37Z",
+        "id": "946072",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Finding a pumpkin milkshake is quite high on my priority list."
+    },
+    {
+        "created_at": "2012-10-10T14:31:42Z",
+        "id": "880158",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "big day for Undrip. wish us luck."
+    },
+    {
+        "created_at": "2012-10-10T02:29:03Z",
+        "id": "868920",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Spanish needs to cut out the \u00bf\u00a1 boilerplate."
+    },
+    {
+        "created_at": "2012-10-07T03:08:46Z",
+        "id": "783446",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "PeeWee\u2019s Big Adventure at Castro Theater with the crew. Good times."
+    },
+    {
+        "created_at": "2012-10-03T20:07:34Z",
+        "id": "648309",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Now that I can do it from my phone in style, I should start posting about my lunches! Catheads BBQ FTW!"
+    },
+    {
+        "created_at": "2012-09-12T03:41:22Z",
+        "id": "390813",
+        "num_replies": 1,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "I haven't opened a Twitter client in two weeks and it feels great."
+    },
+    {
+        "created_at": "2012-08-23T08:23:19Z",
+        "id": "156596",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "http://appeio.com is actually usable on the iPhone. Twitter continues to lose its appeal..."
+    },
+    {
+        "created_at": "2012-08-22T14:07:05Z",
+        "id": "141685",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "this really sucks in iPhone Safari"
+    },
+    {
+        "created_at": "2012-08-12T22:50:05Z",
+        "id": "36720",
+        "num_replies": 0,
+        "num_reposts": 0,
+        "num_stars": 0,
+        "text": "Back when I joined Twitter I was presented with the question \"What are you doing?\" Without any such prompts I am not sure what to write for my first post! But just like 5 years ago, what am I doing? \"Not much.\""
+    },
+    {
+        "created_at": "2013-03-21T20:28:22Z",
+        "id": "4077880",
+        "text": "> So Apple just added two-step verification for Apple ID\u2026 and in the process, proved that they absolutely can NOT do security/web stuff, ever \u2014 https://photos.app.net/4075837/1\n\n-- [Neven Mrgan](https://alpha.app.net/mrgan/post/4075837)"
+    },
+    {
+        "created_at": "2013-02-26T02:10:24Z",
+        "id": "3176666",
+        "text": "> The weak link in this piece http://www.marco.org/2013/02/25/adn-freemium is the \"I should build a social app on Facebook or Twitter\" part. Both of those are on a trajectory of making that less and less possible\u2014that's the whole problem ADN wants to address\n\n-- [Neven Mrgn](https://alpha.app.net/mrgan/post/3174898)"
+    }
+]
