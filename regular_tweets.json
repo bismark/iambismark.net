@@ -159,10 +159,6 @@
         "text": "realizing another one of murphy's laws: you will always have a pimple on the worst day possible.",
         "timestamp": "2007-09-07T19:48:38+00:00"
     },
-    "255318672": {
-        "text": "ging to the mall",
-        "timestamp": "2007-09-08T19:31:42+00:00"
-    },
     "255319012": {
         "text": "going to the mall",
         "timestamp": "2007-09-08T19:32:00+00:00"
@@ -3795,6 +3791,10 @@
         "text": "at the most happening place in baraboo: super walmart.",
         "timestamp": "2008-12-26T20:25:21+00:00"
     },
+    "1085434314": {
+      "text" : "new blog is up! http://cpanra.org/ryan/",
+      "timestamp" : "2008-12-30T06:01:42+00:00"
+    },
     "1088504636": {
         "text": "out for lunch with the family in reedsburg.",
         "timestamp": "2008-12-31T18:38:11+00:00"
@@ -4470,6 +4470,10 @@
     "1291297873": {
         "text": "just got im+ for my iPhone. on sale $.99. ugly interface but doesn't make me sign up for some new account like other apps.",
         "timestamp": "2009-03-07T02:26:10+00:00"
+    },
+    "1293560927": {
+        "text": "after all of these years, i am quite certain [this][1] is still my best blog post ever.\n\n[1]: {{< relref \"1124303940/.md\" >}}\n",
+        "timestamp": "2009-03-07T18:44:18+00:00"
     },
     "1294033329": {
         "text": "heading up to park city with michelle and ariel for the afternoon.",
@@ -5971,6 +5975,10 @@
         "text": "what the... i log in to the 100 hour board for the first time in who knows how long and i have a flashing question? huh.",
         "timestamp": "2009-07-10T03:55:46+00:00"
     },
+    "2562666546": {
+        "text": "[this][1] is definitely still my best commentary on the harry potter series.\n\n[1]: http://theboard.byu.edu/questions/37661/\n",
+        "timestamp": "2009-07-10T04:05:21+00:00"
+    },
     "2568762212": {
         "text": "> \"Make something intended not for your own use, but for use by dummies, and you\u2019ll usually wind up creating something dumb.\"\n\n-- [John Gruber](https://daringfireball.net/2009/07/chrome_os_context)",
         "timestamp": "2009-07-10T14:34:03+00:00"
@@ -7386,6 +7394,10 @@
     "6464568802": {
         "text": "inches of water in the basement make it hard for me to reach my laundry.",
         "timestamp": "2009-12-08T14:25:24+00:00"
+    },
+    "6466575097": {
+        "text": "got it working: http://www.iambismark.net/2009/12/06/my-girl/ -&gt; http://www.iambismark.net/md/2009/12/06/my-girl.text",
+        "timestamp": "2009-12-08T15:43:25+00:00"
     },
     "6475389060": {
         "text": "so i get to try to teach the halting problem to a bunch of freshman comp sci students tomorrow. huh.",
@@ -10319,10 +10331,6 @@
         "text": "I've decided I hate singletons.",
         "timestamp": "2011-10-21T02:14:31+00:00"
     },
-    "127972562847285249": {
-        "text": "quick test",
-        "timestamp": "2011-10-23T05:00:11+00:00"
-    },
     "128856081245028353": {
         "text": "Argh, who saved Samwell and Gilly on the giant elk from the wights??? I'm hoping it's Benjen Stark.",
         "timestamp": "2011-10-25T15:30:58+00:00"
@@ -10656,7 +10664,7 @@
         "timestamp": "2012-05-16T01:37:45+00:00"
     },
     "203696000743907328": {
-        "text": "Pumped to see [Indie Game: The Movie](http://www.indiegamethemovie.com/) with Mariam, Amy Jo, and Charlie! http://t.co/clXt9iJp",
+        "text": "Pumped to see [Indie Game: The Movie](http://www.indiegamethemovie.com/) with Mariam, Amy Jo, and Charlie!",
         "timestamp": "2012-05-19T03:58:05+00:00"
     },
     "204088358903881728": {
@@ -10770,6 +10778,10 @@
     "234652117166608385": {
         "text": "\u201cbuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu\u201d -SF foghorn",
         "timestamp": "2012-08-12T14:06:39+00:00"
+    },
+    "253592394044428288": {
+      "text" : "Not posting much on Twitter anymore, follow me here instead: https://alpha.app.net/bismark (or https://alpha-api.app.net/feed/rss/users/@bismark/posts in Google Reader)",
+      "timestamp" : "2012-10-03T20:28:32+00:00"
     },
     "298492011433041920": {
         "text": "My gut is sucking worse than those refs from last night\u2026*too many cookies*",
@@ -11174,6 +11186,10 @@
     "396337431865085953": {
         "text": "git stash poop",
         "timestamp": "2013-11-01T18:06:22+00:00"
+    },
+    "396434851319914496": {
+      "text" : "I will be singing in the [SF Interfaith Choral Concert](https://www.facebook.com/events/562712730467565/) this Sunday, 7 PM at St. Vincent De Paul Church.",
+      "timestamp" : "2013-11-02T00:33:28+00:00"
     },
     "397048281068343296": {
         "text": "Boom, flights to Japan and South Korea next August are booked.",
