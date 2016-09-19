@@ -1,0 +1,17 @@
+{{- $all_terms := index $.Site.Taxonomies "archive" -}}
+{{- $.Scratch.Set "prev_seen" nil -}}
+{{- $.Scratch.Set "prev_section" nil -}}
+{{- $.Scratch.Set "next_section" nil -}}
+{{- range $key, $value := $all_terms -}}
+    {{- $prev := $.Scratch.Get "prev_seen" -}}
+    {{- if and (ne $prev nil) (eq $key $.Title) -}}
+        {{- $.Scratch.Set "prev_section" $prev -}}
+    {{- end -}}
+    {{- if eq $prev $.Title -}}
+        {{- $.Scratch.Set "next_section" $key -}}
+    {{- end -}}
+    {{- $.Scratch.Set "prev_seen" $key -}}
+{{- end -}}
+{{- $prev_section := $.Scratch.Get "prev_section" -}}
+{{- $next_section := $.Scratch.Get "next_section" -}}
+{{ if ne $prev_section nil }}<a href="/archive/{{ $prev_section }}/">Prev</a> - {{ end }} <a href="/archive/">Archive</a>{{ if ne $next_section nil }} - <a href="/archive/{{ $next_section }}/">Next</a> {{ end }}

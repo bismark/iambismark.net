@@ -15,10 +15,6 @@ archive = "archive"
 
 
 [[menu.main]]
-name = "Archive"
-identifier = "archive"
-url = "/archive/"
-[[menu.main]]
 name = "About"
 identifier = "about"
 url = "/about/"

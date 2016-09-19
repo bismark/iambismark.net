@@ -38,6 +38,10 @@ main {
     flex: 1;
 }
 
+footer ul {
+    padding-left: 0;
+}
+
 footer li {
     list-style: none;
 }
