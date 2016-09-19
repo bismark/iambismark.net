@@ -1,1 +1,2 @@
-{{ if .PrevInSection }}<a class="previous" href="{{.PrevInSection.Permalink}}">Prev</a>{{ end }}{{ if .NextInSection }} {{ if .PrevInSection }}-{{ end }} <a class="next" href="{{.NextInSection.Permalink}}">Next</a>{{ end }}
+{{- $archive := (delimit (slice "archive" (index .Params.archive 0)) "/") -}}
+{{ if .PrevInSection }}<a class="previous" href="{{.PrevInSection.Permalink}}">Prev</a> - {{ end }} <a href="{{ $archive | string | absURL }}"> Archive </a> {{ if .NextInSection }}- <a class="next" href="{{.NextInSection.Permalink}}">Next</a>{{ end }}
