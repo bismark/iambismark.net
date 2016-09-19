@@ -1,0 +1,14 @@
+{
+    "461108343822897152": {
+        "text": "I wish APNS support some sort of generic user authenticated mode. Basically for service Foo, I want app Bar to receive notifications. ",
+        "timestamp": "2014-04-29T11:42:50+00:00"
+    },
+    "461108637629693952": {
+        "text": "Obviously that would require app Bar to handle some standard set of push notifs from service Foo.",
+        "timestamp": "2014-04-29T11:44:00+00:00"
+    },
+    "461108908468486144": {
+        "text": "Idea somewhat inspired by http://colloquy.mobi/bouncers.html",
+        "timestamp": "2014-04-29T11:45:05+00:00"
+    }
+}
