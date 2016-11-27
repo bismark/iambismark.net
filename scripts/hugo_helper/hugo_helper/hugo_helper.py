@@ -8,8 +8,10 @@ from datetime import datetime
 import calendar
 import yaml
 from subprocess import call
+from dateutil import parser
+import twitter
 
-import utils
+from hugo_helper import utils
 
 SITE_PATH = os.path.join(os.getcwd(), 'iambismark.net')
 POST_PATH = os.path.join(SITE_PATH, 'content', 'post')
@@ -20,11 +22,48 @@ def cli():
     pass
 
 @cli.command()
+@click.option('--output', default=lambda: os.path.expanduser('~/.twitter_oauth'))
+def auth_twitter(output):
+    consumer_key = os.environ.get('TWITTER_CONSUMER_KEY')
+    consumer_secret = os.environ.get('TWITTER_CONSUMER_SECRET')
+    click.echo(consumer_key)
+    click.echo(consumer_secret)
+    click.echo(output)
+    twitter.oauth_dance("twitter", consumer_key, consumer_secret, output)
+
+@cli.command()
+@click.option('--tweet')
+@click.option('--auth', default=lambda: os.path.expanduser('~/.twitter_oauth'))
+def import_tweet(tweet, auth):
+    tweet_id = utils.parse_tweet_url(tweet)
+    consumer_key = os.environ.get('TWITTER_CONSUMER_KEY')
+    consumer_secret = os.environ.get('TWITTER_CONSUMER_SECRET')
+    token, token_secret = twitter.read_token_file(auth)
+    t = twitter.Twitter(auth=twitter.OAuth(token, token_secret, consumer_key, consumer_secret))
+    print(tweet_id)
+    print(t.statuses.show(_id=tweet_id, trim_user=True))
+
+
+@cli.command()
+def latest_post():
+    slug = utils.latest_post()
+    date = datetime.utcfromtimestamp(int(slug))
+    click.echo(date.isoformat())
+
+@cli.command()
+@click.option('--slug', default=None)
 @click.option('--kind', default=None, type=click.Choice(KINDS))
 @click.option('--title', default=None)
 @click.option('--photo', default=None)
-def new_post(kind, title, photo):
-    now = datetime.utcnow().replace(microsecond=0)
+def new_post(slug, kind, title, photo):
+    if slug:
+        try:
+            now = parser.parse(slug)
+        except ValueError:
+            now = datetime.utcfromtimestamp(int(slug))
+    else:
+        now = datetime.utcnow().replace(microsecond=0)
+
     metadata = {}
     metadata["date"] = now.isoformat()
     metadata["slug"] = str(calendar.timegm(now.timetuple()))
@@ -40,7 +79,7 @@ def new_post(kind, title, photo):
 
     if kind == 'photo':
         if photo:
-            ext = utils.process_photo(metadata['slug'], photo)[0]
+            ext = utils.process_image(metadata['slug'], photo)[0]
             metadata['imagetype'] = ext
         else:
             metadata['imagetype'] = ''
@@ -73,16 +112,9 @@ def reset_slug(slug):
     if not os.path.isfile(file_path):
         raise click.ClickException("File not foud")
 
-    metadata_yaml = ""
     with open(file_path, 'r') as f:
-        f.readline()
-        while True:
-            line = f.readline()
-            if line.startswith("---"):
-                break
-            metadata_yaml += line
+        metadata = utils.read_metadata(f)
         body = f.read()
-    metadata = yaml.load(metadata_yaml)
 
     now = datetime.utcnow().replace(microsecond=0)
     metadata["date"] = now.isoformat()
@@ -105,9 +137,7 @@ def reset_slug(slug):
 @cli.command()
 @click.argument('slug')
 def edit_post(slug):
-    slug_datetime = datetime.utcfromtimestamp(int(slug))
-    path = os.path.join(POST_PATH, str(slug_datetime.year), slug_datetime.strftime("%m"))
-    file_path = os.path.join(path, "{}.md".format(slug))
+    file_path = utils.slug_to_path(slug)
     call(['vim', file_path])
 
 @cli.command()
@@ -117,5 +147,7 @@ def open_post(slug):
     webbrowser.open(url)
 
 
-
+@cli.command()
+def print_tweet_ids():
+    utils.get_imported_tweet_ids()
 

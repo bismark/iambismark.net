@@ -9,6 +9,7 @@ setup(
         'PyYAML',
         'Pillow',
         'jpegtran-cffi==0.6a1',
+        'python-dateutil',
     ],
     entry_points='''
         [console_scripts]
