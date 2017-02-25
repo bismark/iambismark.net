@@ -14,21 +14,41 @@ output_dir = os.path.join(os.getcwd(), "iambismark.net", "content", "post")
 image_dir = os.path.expanduser("~/Desktop/TweetPhotos")
 processed_dir = os.path.join(image_dir, "processed")
 
-with open('media_tweets.json', 'r') as f:
-    tweets = json.load(f)
-    for tweet_id, tweet in tweets.iteritems():
+post = """
+    [
+    {
+        "application": {
+            "name": "Twitter"
+        },
+        "created_time": "2012-01-14T02:57:47+0000",
+        "id": "17803937_10100289073880599",
+        "link": "http://t.co/qpIYpAmN",
+        "message": "waiting for the luau.",
+        "permalink_url": "https://www.facebook.com/17803937/posts/10100289073880599",
+        "status_type": "published_story",
+        "filename": "IMG_1104.JPG",
+        "tweet_id": "158019945467363328",
+        "type": "link"
+    }
+    ]
+"""
+
+#with open('media_tweets.json', 'r') as f:
+def foo():
+    tweets = json.loads(post)
+    for tweet in tweets:
         if os.path.isfile(os.path.join(processed_dir, tweet['filename'])):
             continue
-        indices = tweet['entities']['media'][0]['indices']
-        text = tweet['text']
-        text = text[:indices[0]].strip() + text[indices[1]:].strip()
+        #indices = tweet['entities']['media'][0]['indices']
+        #text = tweet['text']
+        #text = text[:indices[0]].strip() + text[indices[1]:].strip()
 
         metadata = {}
-        ts = parser.parse(tweet['timestamp'])
+        ts = parser.parse(tweet['created_time'])
         metadata['date'] = ts.isoformat()
         metadata['slug'] = str(calendar.timegm(ts.timetuple()))
         metadata['archive'] = [ts.strftime("%Y-%m")]
-        metadata['alturls'] = ["https://twitter.com/bismark/status/{}".format(tweet_id)]
+        metadata['alturls'] = ["https://twitter.com/bismark/status/{}".format(tweet['tweet_id'], tweet['permalink_url'])]
         metadata['type'] = 'photo'
 
         year = ts.strftime("%Y")
@@ -51,11 +71,12 @@ with open('media_tweets.json', 'r') as f:
 
         with codecs.open(output_filename, 'w', encoding='utf-8') as output_file:
             output_file.write("---\n")
-            yaml.dump(metadata, output_file, encoding='utf-8', default_flow_style=False, indent=4)
+            yaml.safe_dump(metadata, output_file, encoding='utf-8', default_flow_style=False, indent=4)
             output_file.write("---\n\n")
 
             output_file.write(text)
             output_file.write("\n")
 
-        os.rename(media_file, os.path.join(processed_dir, tweet['filename']))
+        #os.rename(media_file, os.path.join(processed_dir, tweet['filename']))
 
+foo()

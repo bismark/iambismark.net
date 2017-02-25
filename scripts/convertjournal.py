@@ -1,9 +1,13 @@
+#! /usr/bin/env python
 import os
 import re
 import sys
 import json
 from datetime import datetime
 import calendar
+import pytoml as toml
+from collections import OrderedDict
+
 
 #files = ["well-i-graduated.md"]
 files = os.listdir(os.getcwd())
@@ -49,15 +53,16 @@ for filename in files:
 
             metadata[parts[0]] = parts[1]
 
-        output_filename = os.path.join(output_dir, metadata['slug']+".md")
+        metadata['aliases'] = alias_map[filename.split(".")[0]]
+        metadata = OrderedDict(sorted(metadata.items(), key=lambda t: t[0]))
+        output_month_dir = os.path.join(output_dir, metadata['archive'][0].split("-")[1])
+        if not os.path.isdir(output_month_dir):
+            os.mkdir(output_month_dir)
+
+        output_filename =  os.path.join(output_month_dir, metadata['slug']+".md")
         with open(output_filename, 'w') as output_file:
             output_file.write("+++\n")
-            for k,v in metadata.iteritems():
-                if type(v) is list:
-                    output_file.write("{} = [{}]\n".format(k, ",".join(["\"{}\"".format(v2) for v2 in v])))
-                else:
-                    v = v.replace("\"", "\\\"")
-                    output_file.write("{} = \"{}\"\n".format(k, v))
+            toml.dump(output_file, metadata)
             output_file.write("+++\n")
             output_file.write("\n")
             while True:
@@ -89,7 +94,6 @@ for filename in files:
             name = groups[0]
             date = datetime.strptime(groups[1], "%Y-%m-%d %H:%M:%S").isoformat()
             text = "".join([l.replace("\n", " ") for l in comment[1:]]).strip()
-
 
             website = None
             website_match = commenter_website.match(name)

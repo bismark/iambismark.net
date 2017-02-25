@@ -13,16 +13,18 @@ import yaml
 output_dir = os.path.join(os.getcwd(), "iambismark.net", "content", "post")
 
 
-with open('regular_tweets.json', 'r') as f:
+with open('status_update.json', 'r') as f:
     tweets = json.load(f)
-    for tweet_id, tweet in tweets.iteritems():
+    for tweet in tweets:
+        if 'slug' in tweet:
+            continue
 
         metadata = {}
-        ts = parser.parse(tweet['timestamp'])
+        ts = parser.parse(tweet['created_time'])
         metadata['date'] = ts.isoformat()
         metadata['slug'] = str(calendar.timegm(ts.timetuple()))
         metadata['archive'] = [ts.strftime("%Y-%m")]
-        metadata['alturls'] = ["https://twitter.com/bismark/status/{}".format(tweet_id)]
+        metadata['alturls'] = [tweet['permalink_url']]
 
         year = ts.strftime("%Y")
         month = ts.strftime("%m")
@@ -40,6 +42,6 @@ with open('regular_tweets.json', 'r') as f:
             output_file.write("---\n")
             yaml.safe_dump(metadata, output_file, encoding='utf-8', default_flow_style=False, indent=4)
             output_file.write("---\n\n")
-            output_file.write(tweet['text'])
+            output_file.write(tweet['message'])
             output_file.write("\n\n")
 

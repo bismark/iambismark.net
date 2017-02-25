@@ -13,16 +13,18 @@ import yaml
 output_dir = os.path.join(os.getcwd(), "iambismark.net", "content", "post")
 
 
-with open('youtube_tweets.json', 'r') as f:
+with open('youtube_posts.json', 'r') as f:
     tweets = json.load(f)
-    for tweet_id, tweet in tweets.iteritems():
+    for tweet in tweets:
+        if 'slug' in tweet:
+            continue
 
         metadata = {}
-        ts = parser.parse(tweet['timestamp'])
+        ts = parser.parse(tweet['created_time'])
         metadata['date'] = ts.isoformat()
         metadata['slug'] = str(calendar.timegm(ts.timetuple()))
         metadata['archive'] = [ts.strftime("%Y-%m")]
-        metadata['alturls'] = ["https://twitter.com/bismark/status/{}".format(tweet_id)]
+        metadata['alturls'] = [tweet['permalink_url']]
 
         year = ts.strftime("%Y")
         month = ts.strftime("%m")
@@ -45,8 +47,8 @@ with open('youtube_tweets.json', 'r') as f:
                 output = "{{{{< youtube_nocookie {} >}}}}".format(tweet['url'])
                 output_file.write(output)
                 output_file.write("\n\n")
-                output_file.write(tweet['text'])
-                output_file.write("\n\n")
+                #output_file.write(tweet['text'])
+                #output_file.write("\n\n")
             else:
                 for url in tweet['urls']:
                     output = "{{{{< youtube_nocookie {} >}}}}".format(url)
