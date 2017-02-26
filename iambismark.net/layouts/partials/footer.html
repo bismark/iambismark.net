@@ -3,7 +3,7 @@
                 {{ range .Site.Menus.main }}
                     <li>
                         {{ if eq .Identifier "rss"}}
-                            <a href="{{$.Site.RSSLink}}" type="application/rss+xml" target="_blank">{{ .Name }}</a>
+                            <a href="{{$.Site.RSSLink}}" rel="alternate" type="application/rss+xml" target="_blank">{{ .Name }}</a>
                         {{ else }} 
                             <a href="{{.URL}}">{{ .Name }}</a>
                         {{ end }}
