@@ -9,10 +9,9 @@ metaDataFormat = "yaml"
 post = "/:section/:slug/"
 
 [taxonomies]
-category = "" 
+category = ""
 tag = ""
 archive = "archive"
-
 
 [[menu.main]]
 name = "About"

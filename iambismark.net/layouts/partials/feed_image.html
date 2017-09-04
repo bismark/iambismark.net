@@ -1,4 +1,5 @@
 {{ $sizes := .Params.imagesizes | default (slice "1200" "720" "360") }}
 {{ $biggestsize := index $sizes 0 }}
-<img src="{{ .Permalink }}1-{{ $biggestsize}}.{{ .Params.imagetype }}" {{ if .Params.imagealt }} alt="{{ .Params.imagealt }}"{{ end}}>
+{{ $format := .Params.imagetype | default "jpg" }}
+<img src="{{ .Permalink }}1-{{ $biggestsize}}.{{ $format }}" {{ if .Params.imagealt }} alt="{{ .Params.imagealt }}"{{ end}}>
 

@@ -5,7 +5,8 @@
         <meta name="viewport" content="width = device-width">
         <link rel="stylesheet" href="/css/style.css">
         {{ if .IsHome }}
-            <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+            <link href="{{ $.Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+             <link href="https://micro.blog/bismark" rel="me" />
         {{ else if eq .IsPage false }}
             <meta name="robots" content="noindex,follow"/>
         {{ end }}
