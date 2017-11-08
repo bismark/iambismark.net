@@ -32,7 +32,7 @@ def auth_twitter(output):
     twitter.oauth_dance("twitter", consumer_key, consumer_secret, output)
 
 @cli.command()
-@click.option('--tweet')
+@click.option('--tweet', prompt='Tweet required!')
 @click.option('--auth', default=lambda: os.path.expanduser('~/.twitter_oauth'))
 def import_tweet(tweet, auth):
     tweet_id = utils.parse_tweet_url(tweet)

@@ -10,6 +10,7 @@ setup(
         'Pillow',
         'jpegtran-cffi==0.6a1',
         'python-dateutil',
+        'twitter',
     ],
     entry_points='''
         [console_scripts]

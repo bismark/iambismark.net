@@ -1,1 +1,1 @@
-ignore = ['venv', 'public']
+ignore = ['venv3', 'venv', 'public']

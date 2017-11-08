@@ -120,7 +120,7 @@ def get_imported_tweet_ids():
                 parsed = urlparse(url)
                 if parsed.hostname == 'www.facebook.com':
                     status_ids.append(os.path.basename(parsed.path))
-    #print json.dumps(status_ids, indent=4, separators=(',', ': '))
+    print(json.dumps(status_ids, indent=4, separators=(',', ': ')))
     return status_ids
 
 def find_dupe_social_networks():
