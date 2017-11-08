@@ -21,7 +21,7 @@ ORIGINAL_IMAGES_PATH = os.path.join(SITE_PATH, 'original_images')
 STATIC_MEDIA_PATH = os.path.join(SITE_PATH, 'static', 'post')
 WIDTHS = [360, 720, 1200]
 
-def process_image(slug, photo):
+def process_image(slug, photo, image_num=1):
     echo(photo)
 
     if not os.path.isfile(photo):
@@ -42,7 +42,7 @@ def process_image(slug, photo):
     original_file_dir = os.path.join(ORIGINAL_IMAGES_PATH, slug)
     if not os.path.isdir(original_file_dir):
         os.mkdir(original_file_dir)
-    original_file_path = os.path.join(original_file_dir, '1.{}'.format(extension))
+    original_file_path = os.path.join(original_file_dir, '{}.{}'.format(image_num, extension))
     shutil.copyfile(photo, original_file_path)
 
     with tempfile.NamedTemporaryFile(suffix=".{}".format(extension), delete=False) as f:
@@ -67,14 +67,14 @@ def process_image(slug, photo):
     if image_format == 'JPEG':
         for width in WIDTHS:
             if image_size[0] > width:
-                make_thumbnail(media_dir, tempfile_name, width)
+                make_thumbnail(media_dir, tempfile_name, image_num, width)
                 sizes.append(width)
             else:
-                make_thumbnail(media_dir, tempfile_name, image_size[0])
+                make_thumbnail(media_dir, tempfile_name, image_num, image_size[0])
                 sizes.append(image_size[0])
                 break
     elif image_format == 'PNG':
-        new_path = os.path.join(media_dir, "1-{}.png".format(image_size[0]))
+        new_path = os.path.join(media_dir, "{}-{}.png".format(image_num, image_size[0]))
         call(['zopflipng', tempfile_name, new_path])
         sizes.append(image_size[0])
 
@@ -84,8 +84,8 @@ def process_image(slug, photo):
 
     return extension, sizes
 
-def make_thumbnail(media_dir, tempfile_name, width):
-    new_path = os.path.join(media_dir, "1-{}.jpg".format(width))
+def make_thumbnail(media_dir, tempfile_name, image_num, width):
+    new_path = os.path.join(media_dir, "{}-{}.jpg".format(image_num, width))
     shutil.copyfile(tempfile_name, new_path)
     call(['mogrify',
         '-filter', 'Triangle',

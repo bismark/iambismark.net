@@ -1,0 +1,6 @@
+{{- $relpath := (delimit (slice .Page.RelPermalink (.Get 0)) "") -}}
+<p>
+<video src="{{ $relpath }}.mp4" controls alt="{{ .Inner }}"></video>
+</p>
+
+
